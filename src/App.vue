@@ -78,7 +78,7 @@ export default {
 　　    this.$router.isBack = false;
 　　},
     $route(to,from){
-        if(to.path == '/' || to.path == '/letto1' || to.path == '/letto2' || to.path == '/letto3' || to.path == '/letto4'){ //用户中心
+        if(to.path == '/' || to.path == '/letto1' || to.path == '/letto2' || to.path == '/letto3' || to.path == '/letto4' || to.path == '/news'){ //用户中心
             this.ish80 = true;
              this.isNews = true;
         }else{
@@ -90,6 +90,8 @@ export default {
         }else{
             this.isMore01 = false;
         }
+
+       
         let marr = ['/vip','/liberty','/coupon','/login','/register','/feedback','/message','/messageshow','/favorites','/disclaimer','/fans','/follow','/profile'];
         if(marr.indexOf(to.path) >= 0){ //用户中心 
             this.isHeard = false;

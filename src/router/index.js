@@ -165,7 +165,7 @@ export default new Router({
       path: '/letto',
       name: 'letto',
       component: letto,
-      redirect: '/letto1',
+      redirect: '/letto2',
       children: [
         {
           path: '/letto1',

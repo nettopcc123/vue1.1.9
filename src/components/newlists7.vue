@@ -168,14 +168,13 @@ export default {
             // 对响应错误做点什么
             return Promise.reject(error);
           });
-          var url=window.encodeURIComponent("?kw=%E4%BD%93%E8%82%B2&KwPosition=3&kwMode=&sentiment=&appCode=&sourceRegion=%E4%B8%AD%E5%9B%BD&sourceType=&pageToken=&geoLabels=&catLabels=%E4%BD%93%E8%82%B2&version=&&publishDateRange=1542844800,1544054400&apikey=rsBL4S22ipGjxwPx67OqdXLP2eRgYXJ9XDeBLwEGfXEhvdzBVov5Xq3KHqVJvMv2");
-            axios.get("http://154.48.238.35:8080/Home/rd?rdurl=http://api01.idataapi.cn:8000/article/idataapi" + url)  /// http://www.hd.me/data.php?callback=dosomething    static/news.json?num  static/news.json  http://misc.opencai.net/consts/lotts.json   /static/news.json
+            axios.get('http://154.48.238.35:8085/UserService.svc/NewsList?newstype=科技&pageindex=' + num + '&pagesize=10')  /// http://www.hd.me/data.php?callback=dosomething    static/news.json?num  static/news.json  http://misc.opencai.net/consts/lotts.json   /static/news.json
             .then(res => {
-              console.log(res.data)
-              JSON.parse(res.data).forEach(v => {
+              console.log(res)
+              res.data.d.Data.forEach(v => {
                 this.newList.push(v);
               });
-              console.log(this.newList)
+              
               if( num >= 3){
                 this.tips = '加载完成';
                 return;
