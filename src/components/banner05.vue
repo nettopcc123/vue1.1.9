@@ -5,11 +5,11 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <router-link :to="{ name: 'newsMore1', params: { articid: 476}}">
-        <div class="title" data-swiper-parallax="-300"><img :src="require('./../components/img/001.jpg?1111')" alt=""></div>
+        <div class="title01" data-swiper-parallax="-300"><img :src="require('./../components/img/001.jpg?1111')" alt=""></div>
         <div class="nbcon">
-        <div class="subtitle" data-swiper-parallax="-200">杜兰特重申与格林冲突，点赞示意格林离开，湖人有个大胆的想法</div>
+        <div class="subtitle" data-swiper-parallax="-200">袁心玥同门师妹成女排一大黑马，人美球技好，已获得郎平赏识</div>
         <div class="text" data-swiper-parallax="-100">
-          <p>杜兰特与格林的冲突已经闹了不少的时间， 这件事情不光影响到了2人的关系，同时也影响到了球队的利益，但是为了他们共同的目标....</p>
+          <p>在女排联赛第一阶段的赛事结束不久，姑娘们迎来了10天的假期，大家却也在全面备战着接下的八强战。所以对于女排姑娘们而言....</p>
         </div>
         </div>
         </router-link>
@@ -18,9 +18,9 @@
         <router-link :to="{ name: 'newsMore1', params: { articid: 479}}">
         <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0"><img :src="require('./../components/img/002.jpg?1111')" alt=""></div>
         <div class="nbcon">
-        <div class="subtitle" data-swiper-parallax="-200">三连败，凯尔特人跌到东部第八寻求交易，火箭湖人牵涉其中</div>
+        <div class="subtitle" data-swiper-parallax="-200">马刺推迟出发时间，让球队成员和家人多相处一会儿</div>
         <div class="text" data-swiper-parallax="-100">
-          <p>本赛季常规赛已经打完了五分之一，每年常规赛到这个时候，总是交易频发的时期，各个球队通过近20场比赛和调整，基本上都已经...</p>
+          <p>格雷格-波波维奇对球队的行程做了调整，好让球员、教练组和球队工作人员能在感恩节和家人共度更多时间...</p>
         </div>
         </div>
         </router-link>
@@ -87,8 +87,7 @@ export default {
     bottom:0rem;
     background:rgba(0, 0, 0, 0.5)
 }
-.title{
-    position: absolute;
+.title01{
     z-index: -1;
 }
 .parallax-bg{
