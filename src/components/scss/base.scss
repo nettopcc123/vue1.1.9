@@ -1,0 +1,57 @@
+//颜色配置
+$bgColor: #ddd;      // 主体景色
+$bgDarkColor:darken($bgColor,10%);   // 主体深景色
+$bgLightColor:lighten($bgColor,20%);   // 主体深景色
+$bgmessIco:#a8dfff;      // ICO背景灰色
+$bgWhiteColor: #fff;     // 白色背景色
+$rbg: #fff;          //透明白色背景
+$bgLogoColor: #eff7fb;  //浅蓝色
+$whiteColor: #ebebed;    // 浅白色
+$mesBgColor:#f76d52;     // 消息背景红色
+$noticeBgColor:#f5f5f5;  // 公告灰色背景
+
+$fontClor:#080707;       // 淡黑色文字颜色
+$fontDarkClor: #666666;  // 深色文字
+$fontGrayInputClor: #cccccc;  // 灰色文字输入框
+$fontCopyClor: #999999;  // 灰色文字版权
+$fontGrayClor:#c9ced1;   // 灰色更多文字颜色
+$fontFMenuClor:#a4adb4;  // 灰色底部菜单图标
+$linGrayColor:#dddddd;   // 灰色线条颜色
+$curFontColor:#33adec;   // 选中字体的颜色
+$fontTzDClor:#4d4d4d;     // 投注记录文字深颜色
+$fontTzqClor:#8d8d8d;     // 投注记录文字浅颜色
+
+$buttonBG:#eeeeee;       // 按扭颜色
+$bgvip:#f9ca59;          //vip黄色背景
+$buttonBGc:#5eb1f8;      ///按扭背景色
+$buttonLine:#6eb9f9;     //按扭外线色
+$bgPlumRed:#e5335d;      //梅红色背景
+$bgGreen:#00b968;        //绿色背景
+$bgdisable:#c5c5c5;      //灰色不可选按扭背景
+$ewmline:#a7def7;        //连接线条颜色
+
+
+$bankColor:#ca404b;      //招商银行
+$bankColor1:#4ab08d;     //农业银行
+
+
+
+$fontYellowColor:#f9ca59;          //vip黄色背景
+$error:#f56c6c;          //红色错误提示
+$fontWhiteColor: #fff;     // 白色背景色
+$bankBuleBg:#0c68b7;        //银行背景颜色
+$warring:#e6a23c;      //警告颜色
+$warringIcon:#f4bd00;      //警告图标颜色
+$success:#67c23a;      //成功告颜色
+$fontDoing:#0c68b7;   //正在转帐
+$fonterror:#f56c6c;          //红色文字错误提示
+
+$bankBuleFontLight:#86b4db;  //银行文字颜色减淡
+$bankLine:#2577be;    //银行线条颜色
+$bTitleFontLight:#333333;   // 个人中心标题文字
+$iconYellow:#f5c147; //个人中心图标颜色
+$iconBlue:#34acef; //个人中心图标颜色
+$iconGreen :#73c6bf; //个人中心图标颜色
+$open:#4dd865;      //开关颜色
+$flink:#43a2f7; //链接文字颜色
+$dflink:darken($flink,10%); //链接文字颜色

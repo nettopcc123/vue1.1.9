@@ -1,0 +1,153 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>点爆圣诞</title>
+  <link href="css/common.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="loading ">
+      <div class="loading_container">
+        <div class="loading_content">
+          <div class="circle_outer"></div>
+          <div class="circle_inner"></div>
+        </div>
+      </div>
+    </div>
+  <div class="czActive none">
+    <div class="twodanTop">
+      <div class="bgSnow">
+        <span class="wbgSnow2 snowone"></span>
+        <span class="wbgSnow2 snowtwo"></span>
+        <span class="wbgSnow3 snowthree"></span>
+        <span class="wbgSnow1 snowfour"></span>
+      </div>
+      <a href="#" class="logo">
+        <img src="images/logo.png" width="75">
+      </a>
+      <div class="music balloon">
+        <span></span>
+      </div>
+      <div class="snow"></div>
+      <div class="twodanTop-cont">
+        <div class="bgRing">
+          <span class="w15 bgRingone"></span>
+          <span class="w10 bgRingtwo"></span>
+          <span class="w8 bgRingthree"></span>
+          <span class="w8 bgRingfour"></span>
+          <span class="w10 bgRingfive"></span>
+          <span class="w15 bgRingsix"></span>
+          <span class="w12 bgRingseven"></span>
+          <span class="w7 bgRingeight"></span>
+          <span class="w5 bgRingnine"></span>
+          <span class="w5 bgRingten"></span>
+        </div>
+        <div class="pillar">
+          <div>
+            <span></span>
+          </div> <b class="balloon"></b>
+        </div>
+        <div class="twodanTop-title">
+          <img src="images/twodan1.png" alt="" width="240"></div>
+        <div class="balloon-one balloon"></div>
+        <div class="balloon-two balloon"></div>
+        <div class="balloon-three balloon"></div>
+        <div class="balloon-four balloon"></div>
+        <div class="twodanTop-old">
+          <img src="images/twodan3.png" width="161" class="old-belly">
+          <div class="old-leftArm balloon"></div>
+          <div class="old-rightArm ionOne"></div>
+          <div class="old-leftArm-two ionOne none"></div>
+          <div class="old-rightArm-two balloon none"></div>
+          <div class="old-head ionOne">
+            <div class="old-eye balloon "></div>
+            <div class="old-moustache ionOne"></div>
+            <div class="old-mouth balloon "></div>
+            <div class="old-hellow balloon"></div>
+          </div>
+          <div class="old-finger-quan balloon"></div>
+          <div class="old-finger balloon"></div>
+        </div>
+
+      </div>
+      <div class="twodanTop-snow"></div>
+
+    </div>
+    <div class="twodanBottom">
+      <div class="twodanBottom-cont">
+        <div>
+          <p>
+            <span>1</span>
+            爆点圣诞老人肚子， 点击频率越快， 越容易爆出大红包。
+          </p>
+          <p>
+            <span>2</span>
+            每个用户只能领取1次现金红包。
+          </p>
+          <p>
+            <span>3</span>
+            领取红包后， 可分享此游戏给好友。若五位或五位以上的好友参与游戏并注册认证， 则分享者可额外获得一次领取红包机会 （领取红包机会不叠加） 。
+          </p>
+          <p class="color-yellow">注：分享游戏需登陆账号后分享才算有效。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="pop none">
+  <div class="popOne-cont ">
+    <div class="popOnecont-top"></div>
+    <div class="popOnecont-cont">
+      <p>
+        <span>圣诞老人</span>
+        给你发了一个红包
+      </p>
+      <div class="Turntable TurntableOne donut-front ">
+        <div>拆红包</div>
+      </div>
+      <div class="Turntable TurntableTwo">
+        <div class="Turntable-bg"></div>
+      </div>
+    </div>
+    <div class="ribbon">
+      <span class="ribbonOne"></span>
+      <span class="ribbonTwo"></span>
+      <span class="ribbonThree"></span>
+      <span class="ribbonFour"></span>
+    </div>
+  </div>
+  <div class="popTwo-cont none">
+    <img src="images/twodan9.png" width="286">
+    <a href="" class="popTwoCont-land"></a>
+    <a href="" class="popTwoCont-register"></a>
+    <span class="popTwoCont-close"></span>
+  </div>
+  </div>
+<!--   <audio src="images/music.mp3" autoplay loop id="music"></audio> -->
+  <div class="oldfingerquan balloon"></div>
+<!--   <div class="xiaxian"><b></b><img src="images/xiajia.png" alt=""></div> -->
+  <script type="text/javascript" src="js/zepto.js"></script>
+  <script type="text/javascript" src="js/cztap.js"></script>
+  <script>
+
+  $('.old-belly,.old-finger,.old-finger-quan,.oldfingerquan').czTap({
+    success:function(){
+      // 成功后执行这个代码；
+    },
+    time:5,// =动画时间
+    speed:3,//  动画频率
+    multiple:2,// 1的时候是1s，2 的时候是半秒。以此类推
+    // hrefland:'www.baidui.com',
+    // 登录链接
+    // hrefregister:'#'
+    // 注册链接
+  });
+  </script>
+
+</body>
+
+</html>

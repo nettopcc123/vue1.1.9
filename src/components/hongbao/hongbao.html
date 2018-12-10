@@ -1,0 +1,234 @@
+<html><head><meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>618插件网 jquery手机端抢红包雨效果</title>
+<script type="text/javascript" src="http://618cj.com/wp-content/themes/pingraphy/js/jquery-1.4.2.min.js"></script>
+    <link href="http://618cj.com/wp-content/themes/pingraphy/css/animate.min.css" rel="stylesheet">
+	   <style>
+	   body{
+		   margin:0px;
+	   }
+	   .floating-button {
+    color: #fff;
+    position: fixed;
+    font-size: 16px;
+    right: 16px;
+    font-weight: bold;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    z-index: 1500;
+    overflow: hidden;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #e91e63;
+    text-decoration: none;
+}
+
+.entry-header{
+	    background: #000;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 20px;
+  cursor: pointer;
+	
+}
+.entry-content{
+padding-top:36px;
+}
+.ewm{
+     position: fixed;
+    top: 15px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+
+width:200px;
+}
+.ewm:hover .erimg {
+display:black;
+
+}
+.closeimg{
+    position: fixed;
+    top: 7px;
+    right: 20px;
+    width: 34px;
+    cursor: pointer;
+}
+
+.loading_div {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    top: 0px;
+    z-index: 10000;
+    left: 50%;
+    margin-left: -50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}	
+
+.loading {
+    text-align: center;
+    position: relative;
+    top: 48%;
+}
+
+.rotate {
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotating {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+	   </style>
+
+
+
+
+
+</head><body>
+
+</div>
+	<a href="http://www.618cj.com" target="_blank" class="floating-button addbtn color-pink animated fadeInLeftBig ">首页</a>
+	<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+<article id="post-2313" class="post-2313 page type-page status-publish hentry tag-44 tag-jquery tag-302">
+	<div class="content-wrap">
+		<div class="entry-content" style="padding-top: 0px;">
+			<p><iframe src="http://618cj.com/ys/2310/" id="iframe" frameborder="0" width="100%" height="100%"></iframe></p>
+		</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+</main><!-- #main -->
+</div><!-- #primary -->
+<!-- 二维码 -->
+<div class="ewm" style="display: none;">
+<div style="margin-bottom:10px;color: #ffcc00;" title="如果微信扫码打不开，请使用手机浏览器扫码演示">
+手机二维码演示
+</div>
+
+<img class="ewmimg" style="display:none;" src="http://qr.liantu.com/api.php?bg=f3f3f3&amp;fg=ff0000&amp;gc=222222&amp;el=l&amp;w=200&amp;m=10&amp;text=http://618cj.com/jquery%e6%89%8b%e6%9c%ba%e7%ab%af%e6%8a%a2%e7%ba%a2%e5%8c%85%e9%9b%a8%e6%95%88%e6%9e%9c/" alt="QR:jquery手机端抢红包雨效果">
+</div>
+
+<img class="closeimg" src="/close.png" alt="" style="display: none;">
+
+<script>
+$('.ewm').mouseover(function(){
+ $('.ewmimg').show();
+});
+$('.ewm').mouseleave(function(){
+ $('.ewmimg').hide();
+})
+</script>
+
+
+<script type="text/javascript">
+
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+
+var browser = navigator.userAgent.toLowerCase(); 
+
+var isMobile = false; 
+
+for (var i=0; i<mobileAgent.length; i++){ if (browser.indexOf(mobileAgent[i])!=-1){ isMobile = true; 
+
+$('.entry-header').hide();
+$('.ewm').hide();
+$('.entry-content').css('padding-top','0px');
+$('.closeimg').hide();
+
+break; } } 
+
+$('.closeimg').click(function(){
+$(this).hide();
+$('.entry-header').hide();
+$('.ewm').hide();
+$('.entry-content').css('padding-top','0px');
+
+})
+
+//jiami
+ document.oncontextmenu=new Function("event.returnValue=false;"); 
+　　 document.onselectstart=new Function("event.returnValue=false;");
+　　 function testKeyDown(event)
+ {  
+  if (
+   (event.keyCode == 123)  || 
+   (event.shiftKey)||
+   (event.ctrlKey))
+  {
+   event.keyCode = 0;  
+   event.returnValue = false;
+  }
+ }
+ document.onkeydown = function(){testKeyDown(event);}
+ window.onhelp = function(){return false;}
+
+//loading
+window.onload=function(){
+$(".loading_div").fadeOut();
+}
+setTimeout(function(){
+        $(".loading_div").fadeOut();
+    },5000)
+
+//标题修改
+$("title").append($('.entry-title').html());
+</script>
+
+
+
+
+
+</body></html>
